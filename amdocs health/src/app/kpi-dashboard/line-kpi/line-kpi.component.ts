@@ -21,15 +21,15 @@ export class LineKpiComponent{
         "value": 118
       },
       {
-        "name": "Small Stops",
+        "name": "Personal breaks",
         "value": 42
       },
         {
-        "name": "Production Rejects",
+        "name": "patient adjustments",
         "value": 95
       },
       {
-      "name": "Start-up Rejects",
+      "name": "Others",
       "value": 35
     }]
   
@@ -44,15 +44,15 @@ export class LineKpiComponent{
     };
 
     single: any[]= [{
-        "name": "Target",
+        "name": " Affected",
         "value": 5500000
       },
       {
-        "name": "Good Count",
+        "name": "Recovered",
         "value": 3006840
       },
       {
-        "name": "Bad Count",
+        "name": "Expired",
         "value": 23160
       },];
   

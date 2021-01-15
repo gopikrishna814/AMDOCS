@@ -21,7 +21,7 @@
     <div class="current-yield card pull-left" style="height: 29%;width: 63%; margin: 0.5rem 0.25rem 0.25rem 0.5rem">
         <div style="width:100%;height: 100%;background: #FFFFFF;border-radius: 12px;">
             <div class="header">
-                <label style="font-weight: 600;font-size: 20px;margin: 0vh 0vh 0vh 3vh;">Current Yield</label>
+                <label style="font-weight: 600;font-size: 20px;margin: 0vh 0vh 0vh 3vh;">Doses Ordered</label>
             </div>
             <highcharts-chart
             [Highcharts] = "bullet" 
@@ -35,7 +35,7 @@
     <div class="hourly-yield card pull-left" style="height: 29%;width: 35%; margin: 0.5rem 0.5rem 0.25rem 0.25rem;">
         <div style="width:100%;height: 100%;background: #FFFFFF;border-radius: 12px;">
             <div class="header">
-                <label style="font-weight: 600;font-size: 20px;margin: 0vh 0vh 0vh 3vh;">Hourly Yield</label>
+                <label style="font-weight: 600;font-size: 20px;margin: 0vh 0vh 0vh 3vh;">Doses at hourly level</label>
             </div>
             <div class="body" style="height: 19vh;">
               <highcharts-chart
@@ -51,7 +51,7 @@
     <div class="performance card pull-left" style="width: 23%;height: 29%; margin: 0.25rem 0.25rem 0.25rem 0.5rem; ">
         <div style="width:100%;height: 100%;background: #FFFFFF;border-radius: 12px;">
             <div class="header" style="text-align: center;">
-                <label style="font-weight: 600;font-size: 20px;">Performance</label>
+                <label style="font-weight: 600;font-size: 20px;">Recovery of children</label>
             </div>
             <div class="body" style="height: 18vh;">
               
@@ -69,7 +69,7 @@
                 <div class="header row" style="text-align: center;">
                     <div class="col-md-4">
                       <div class="header" style="text-align: center;">
-                        <label style="font-weight: 600;font-size: 20px;">First Rejection</label>
+                        <label style="font-weight: 600;font-size: 20px;">Recovery of Adults</label>
                       </div>
                       <div class="highchartclass" style="width: 100%;height: 85%;">
                       <highcharts-chart id="gaugeBar" [Highcharts]="gaugeChart"
@@ -79,7 +79,7 @@
                     </div>
                    <div class="col-md-8">
                     <div class="header" style="text-align: center;">
-                      <label style="font-weight: 600;font-size: 20px;">Rejection Reasons (in mins)</label>
+                      <label style="font-weight: 600;font-size: 20px;">Recovery of all aged</label>
                     </div>
                     <highcharts-chart
                     [Highcharts] = "treechart" 
@@ -100,7 +100,7 @@
     <div class="quality card pull-left" style="transform: translateY(-108%); height:29%;width: 23%; margin:0.25rem 0.25rem 0.5rem 0.5rem;">
         <div style="width: 100%;height: 100%;background: #FFFFFF;border-radius: 12px; ">
             <div class="header" style="text-align: center;">
-                <label style="font-weight: 600;font-size: 20px;">Quality</label>
+                <label style="font-weight: 600;font-size: 20px;">Recovery of old aged</label>
             </div>
             <div class="body" style="height: 18vh;">
               <highcharts-chart id="gaugeBar" [Highcharts]="gaugeChart"

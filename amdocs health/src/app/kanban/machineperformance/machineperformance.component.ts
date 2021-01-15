@@ -35,54 +35,54 @@ export class MachineperformanceComponent implements OnInit {
      
 mychartsdata= [{
   id: 'A',
-  name: 'Startup/ production Rejects',
+  name: 'EUROPE',
   color: "#169BA6"
 }, {
   id: 'B',
-  name: 'Rework',
+  name: 'ASIA',
   color: "#169BA6"
 }, {
   id: 'O',
-  name: 'Incorrect Assembly',
+  name: 'NORTH AMERICA',
   color: '#169BA6'
 }, {
-  name: 'Anne',
+  name: 'UK',
   parent: 'A',
   value: 5
 }, {
-  name: 'Rick',
+  name: 'Germany',
   parent: 'A',
   value: 3
 }, {
-  name: 'Peter',
+  name: 'ITALY',
   parent: 'A',
   value: 4
 }, {
-  name: 'Anne',
+  name: 'china',
   parent: 'B',
   value: 4
 }, {
-  name: 'Rick',
+  name: 'india',
   parent: 'B',
   value: 10
 }, {
-  name: 'Peter',
+  name: 'sri lanka',
   parent: 'B',
   value: 1
 }, {
-  name: 'Anne',
+  name: 'USA',
   parent: 'O',
   value: 1
 }, {
-  name: 'Rick',
+  name: 'Cannada',
   parent: 'O',
   value: 3
 }, {
-  name: 'Peter',
+  name: 'Mexico',
   parent: 'O',
   value: 3
 }, {
-  name: 'in process expiration',
+  name: 'Africa',
   parent: 'Kiwi',
   value: 2,
   color: '#169BA6'
