@@ -1,0 +1,205 @@
+<div style="height: calc(100% - 127px); background-color: #F2EFEF; overflow-y: auto; overflow-x: hidden; padding: 0 1rem;">
+    <div class="row" style="background-color: #fff; text-align: center; height: 1.8rem; font-size: 3vh; font-weight: 600; font-family: Calibri; color: #213A51;">
+      <div class='col-sm-3 col-md-3 col-lg-3'>&nbsp;</div>
+      <div class='col-sm-6 col-md-6 col-lg-6'>
+        <span>
+          Statistics Dashboard
+        </span>
+      </div>
+      <div class='col-sm-3 col-md-3 col-lg-3'>&nbsp;</div>
+    </div>
+
+    <div style="display: inline-flex; height: calc(100% - 2.2rem); width: 100%; margin-top: 0.4rem;">
+      <div style="width: 40%; height: 100%;">
+
+        <div style="height: 33%; width: 100%; background-color: #fff; padding: 0.5rem; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);">
+          <div style="height: 50%; width: 100%; display: inline-flex; border-bottom: 1px solid rgba(50, 156, 160, 0.33); padding: 0.2rem;">
+            <div style="height: 100%; width: 40%; text-align: center;">
+              <h2 style="color: #2B9CA0; font-weight: bolder; margin: 0;">92%</h2>
+              <span style="color: #595959; font-weight: 600; font-size: 18px;">Global Recovery</span>
+            </div>
+
+            <div style="height: 100%; width: 60%;">
+              <highcharts-chart id="chartBar" [Highcharts]="Highcharts"
+              style = "width: 60%; height: 100%;" [options]="chartOptions"></highcharts-chart>
+            </div>
+          </div><br>
+          <div style="height: 50%; width: 100%; display: inline-flex; padding: 0.2rem;">
+            <div style="height: 100%; width: 40%; text-align: center;">
+              <h2 style="color: #2B9CA0; font-weight: bolder; margin: 0;">97%</h2>
+              <span style="color: #595959; font-weight: 600; font-size: 18px;">Indian Recovery</span>
+            </div>
+
+            <div style="height: 100%; width: 60%;">
+              
+              <highcharts-chart id="chartBar" [Highcharts]="Highcharts"
+              style = "width: 100%; height: 100%;" [options]="chartOptions2"></highcharts-chart>
+            </div>
+          </div>
+        </div>
+        
+        <div style="height: 40%; width: 100%; background-color: #fff; padding: 0.8rem; border-radius: 8px; 
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); margin-top: 0.4rem;">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <span style="color: #213A51; font-weight: 600; font-size: 1.2rem;">Metric Trends</span>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+              &nbsp;
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6" style="text-align: center;">
+              <span style="color: #A8A8A8; font-weight: 500;">Monthly Trends</span>
+            </div>
+          </div>
+          <div class="row" style="height: 26%; width: 100%; border-radius: 6rem; margin-left: 0.2rem;
+          text-align: center; background-color: #f5f5f5; display: inline-flex;margin-top: 0.25rem;">
+            <div class="col-sm-3 col-md-3 col-lg-3" style="margin:auto;">
+              <span>OLE</span>
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3" style="margin:auto;">
+              <span>92%</span> 
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <highcharts-chart id="chartBar" [Highcharts]="Highcharts"
+              style = "width: 100%; height: 100%" [options]="chartOptions3"></highcharts-chart>
+            </div>
+
+          </div>
+
+          <div class="row" style="height: 26%; width: 100%; border-radius: 6rem; margin-left: 0.2rem;
+          text-align: center; background-color: #f5f5f5; display: inline-flex; margin-top: 0.25rem;">
+            <div class="col-sm-3 col-md-3 col-lg-3" style="margin:auto;">
+              <span>TEEP</span> 
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3" style="margin:auto;">
+              <span>92%</span> 
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <highcharts-chart id="chartBar" [Highcharts]="Highcharts"
+              style = "width: 100%; height: 100%;" [options]="chartOptions3"></highcharts-chart>
+            </div>
+
+          </div>
+
+          <div class="row" style="height: 26%; width: 100%; border-radius: 6rem; margin-left: 0.2rem;
+          text-align: center; background-color: #f5f5f5; display: inline-flex;margin-top: 0.25rem;">
+            <div class="col-sm-3 col-md-3 col-lg-3" style="margin:auto;">
+              <span>Capacity Utilization</span> 
+            </div>
+            <div class="col-sm-3 col-md-3 col-lg-3" style="margin:auto;">
+              <span>92%</span>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <highcharts-chart id="chartBar" [Highcharts]="Highcharts"
+              style = "width: 100%; height: 100%;" [options]="chartOptions3"></highcharts-chart>
+            </div>
+
+          </div>
+
+
+          <!-- <div style="height: 28%; width: 100%; border-radius: 6rem; padding: 2vh 3vh; 
+          text-align: center; background-color: #f5f5f5; display: inline-flex;">
+            <div style="width: 20%;">
+              OLE
+            </div>
+            <div style="width: 20%;">
+              92%
+            </div>
+            <div style="width: 60%;">
+              <highcharts-chart id="chartBar" [Highcharts]="Highcharts"
+              style = "width: 100%; height: 100%;" [options]="chartOptions3"></highcharts-chart>
+            </div>
+
+          </div>
+             -->
+            
+        </div>
+
+        <div style="height: 21%; width: 100%; background-color: #fff; border-radius: 8px; 
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); margin-top: 0.5rem; padding-left: 0.5rem; width: 100%;  ">
+          <ngx-charts-number-card [scheme]="colorScheme" [results]="this.single" [cardColor]="cardColor"(select)="onSelect($event)">
+          </ngx-charts-number-card>
+        </div>
+
+      </div>
+
+      
+      <div style="width: 60%; height:100%; margin-left: 0.5rem;">
+        <div style="width: 100%; height: 33%; display: inline-flex;">
+          <div style=" height: 100%; width: 33%;background-color: #fff; padding: 0.5rem; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);">
+            <highcharts-chart id="gaugeBar" [Highcharts]="Highcharts"
+            style = "width: 100%; height: 100%;" [options]="speedOptions"></highcharts-chart>
+          </div>
+
+          <div style=" height: 100%; width: 33%; background-color: #fff; padding: 0.5rem; margin-left: 0.5rem; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);">
+            <highcharts-chart id="gaugeBar" [Highcharts]="Highcharts"
+            style = "width: 100%; height: 100%;" [options]="speedOptions"></highcharts-chart>
+          </div>
+
+          <div style=" height: 100%; width: 33%; background-color: #fff; padding: 0.5rem; margin-left: 0.5rem; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);">
+            <highcharts-chart id="gaugeBar" [Highcharts]="Highcharts"
+            style = "width: 100%; height: 100%;" [options]="speedOptions"></highcharts-chart>
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 33%;background-color: #fff; padding: 0.5rem; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); margin-top: 0.4rem;">
+          <div style="text-align: center; width: 100%; height: 15%;">
+            <span style="color: #213A51; font-weight: 600; font-size: 1.2rem;">Avg. Cycle Time (in secs)</span>
+          </div>
+          <div style="width: 100%; display:inline-flex; padding: 0.5rem; height: 15%;">
+          
+          </div>
+          <div style="width: 100%; display:inline-flex; padding: 0.5rem; height: 70%; flex-direction: row; justify-content: center; align-items: center;">
+            <div style="background-color: #f5f5f5; width: 54%; height: 2%; z-index: 1; position: absolute;">
+             
+            </div>
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 13%; height: 100%; margin-right: 0.3rem; z-index: 2;">
+              
+            </div>
+
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 8%; height: 60%; margin-right: 0.3rem;">
+            
+            </div>
+
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 13%; height: 100%; margin-right: 0.3rem;">
+            
+            </div>
+
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 8%; height: 60%; margin-right: 0.3rem;">
+            
+            </div>
+
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 13%; height: 100%; margin-right: 0.3rem;">
+            
+            </div>
+
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 8%; height: 60%; margin-right: 0.3rem;">
+            
+            </div>
+
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 13%; height: 100%; margin-right: 0.3rem;">
+            
+            </div>
+
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 8%; height: 60%; margin-right: 0.3rem;">
+            
+            </div>
+
+            <div style="background-color: #f5f5f5; border-radius: 100%; width: 13%; height: 100%; margin-right: 0.3rem;">
+            
+            </div>
+            
+          </div>
+        </div>
+
+        <div style="width: 100%; height: 28%;background-color: #fff; padding: 0.5rem; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); margin-top: 0.4rem;">
+          <ngx-charts-advanced-pie-chart style="text-align: center;"
+          [scheme]="colorScheme2"
+          [results]="single2"
+          [gradient]="gradient" style="top: 10%;">
+          </ngx-charts-advanced-pie-chart>
+        </div>
+
+      </div>
+    </div>
+  </div>

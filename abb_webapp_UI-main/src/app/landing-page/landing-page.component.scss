@@ -1,0 +1,30 @@
+#welcome-div{
+    padding-left: 1.7rem;
+    margin: 0.2rem 0;
+    background-color: #ffffff;
+    height: 1.8rem; 
+    font-size: 3vh; 
+    font-weight: 600; 
+    font-family: Calibri;
+    color: #213A51;
+}
+
+.lineName{
+    font-size: 3vh; 
+    color: #213A51; 
+    font-weight: bolder;
+}
+
+.metricsDiv{
+    background: #ECF4F4;
+    border-radius: 7px;
+    border-right: 1rem solid #2B9CA0;
+}
+
+#metricsIcon{
+    font-size: 6vh;
+    background: -webkit-linear-gradient(90deg, rgba(27,156,183,1) 22%, rgba(47,82,101,1) 55%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

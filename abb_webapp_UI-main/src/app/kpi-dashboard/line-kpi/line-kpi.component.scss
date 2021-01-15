@@ -1,0 +1,38 @@
+.info-timeline ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .info-timeline ul li span.timeline-circle {
+    position: relative;
+    border: 2px solid #999;
+    border-radius: 100%;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #fff;
+    z-index: 2;
+    display: inline-block;
+  }
+  
+  .info-timeline ul li:not(:first-of-type) span.timeline-circle::before {
+    position: absolute;
+    border: 1px solid #999;
+    width: 0;
+    height: 50px;
+    display: block;
+    content: '';
+    left: 50%;
+    z-index: 1;
+    top: -54px;
+    margin-left: -1px;
+  }
+  
+  .info-timeline ul li a {
+    color: #000;
+  }
+
+  

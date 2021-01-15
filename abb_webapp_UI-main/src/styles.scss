@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* for dropdown */
+@import "~@ng-select/ng-select/themes/default.theme.css"; 
+
+$primary-font-color: #3D6074;
+$content-font-color: #213A51;
+$secondary-header-color: #595959;
+
+
+html, body{
+    height: 100%;
+    font-family: Calibri;
+    overflow: hidden;
+}
+
+#main-div{
+    background-color: #F5F5F5;
+    height: 100%;
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
+}
+
+.tileCard{
+    border: 1px solid #A69999; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); 
+    cursor: pointer;
+}
+
+.highcharts-container, .highcharts-series, .highcharts-root{
+    height:95% !important;
+    width: 100% !important;
+ }
+
+ .ng-select{
+    height: 1.5rem;
+    color: #213A51;
+    padding: 0 !important;
+    cursor: pointer;
+    border-radius: 1rem !important;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .ng-select .ng-select-container{
+    height: inherit !important;
+    min-height: inherit !important;
+    outline: none !important;
+    border: none !important;
+    width: inherit !important;
+    background: inherit !important;
+    color: inherit !important;
+    border-radius: inherit !important;
+    font-size: inherit;
+  }
+
+  .total-value{
+      text-align: center;
+      font-size: 28px !important;
+  }
+
+  .total-label{
+      font-size: 18px !important;
+      margin: 0 !important;
+      text-align: center;
+      font-weight: 600 !important;
+  }
+
+  .advanced-pie-legend .legend-items-container .legend-items .legend-item{
+      margin-right: 8px !important;
+      font-size: 4vh !important;
+  }
+
+.item-percent{
+    display: none !important;
+}
+
+.item-label {
+    font-size: 2vh !important;
+    font-family: calibri;
+    font-weight: 600;
+    opacity: 0.8 !important;
+}
+
+.advanced-pie-legend{
+    top: 38% !important;
+
+}

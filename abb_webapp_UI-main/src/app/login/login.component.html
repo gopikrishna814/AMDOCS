@@ -1,0 +1,78 @@
+<div class="container-fluid" id="main-div">
+<nav class="navbar navbar-expand-lg" style="height: 50px; box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25); background-color: #fff;">
+    <img src="..\assets\png\bodhee-sm.png" alt='Bodhee Logo' style='width:2.5em;'>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item dropdown">
+        
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+     
+    
+      </form>
+      <img src="..\assets\png\abb_logo.png" alt='Client Logo' style='width:4rem;'>
+    </div>
+    
+  </nav>
+
+  <div class="conatiner login-div" id="white-overlay" style="height: calc(100% - 96px); 
+  overflow-y: auto; display: inline-flex; overflow-x: hidden; width: 100% ;
+    flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;">
+    <div class="input-div" style="padding: 2%;">
+
+      <h3 class="display-4" style="margin-left: 2%; font-weight: 600; color: rgb(40, 225, 226,0.59);font-family: calibri; text-decoration: underline;">Login</h3>
+      <p class="text-muted mb-4"></p>
+      <form [formGroup]="userDetails" #f="ngForm">
+        <div class="form-group mb-3" style="padding: 0 0.5rem; width: 100%;">
+          <div style="display: inline-flex; width: 100%;">
+            <div style="width:11%; background-color: rgba(8, 31, 43,0.7); text-align: center;">
+              <i class="fa fa-envelope" aria-hidden="true" style="font-size: 4vh; color: aliceblue; margin-top: 0.3rem;"></i>
+            </div>
+            <input [class.is-invalid] = "userDetails.get('emailId').invalid && userDetails.get('emailId').touched" style="width: 89%; border-radius: 0; opacity: 73%;"
+            id="emailId" name="emailId" type="email" placeholder="Email address" class="form-control border-0 shadow-sm px-4" formControlName="emailId">
+          </div>
+        <div *ngIf="(emailId.invalid && emailId.touched) || emailId.dirty">
+            <small *ngIf="emailId.errors?.required" class="text-danger">Email is required!</small>
+            <!--question mark(?) is a safe navigation operator-->
+            <small *ngIf="emailId.errors?.pattern" class="text-danger">Please provide a valid email address!</small>
+          </div>
+        </div>
+        <div class="form-group mb-3" style="padding: 0 0.5rem; width: 100%;">
+          <div style="display: inline-flex; width: 100%;">
+            <div style="width: 11%; background-color: rgba(8, 31, 43,0.7); text-align: center;">
+              <i class="fa fa-key" aria-hidden="true" style="font-size: 4vh; color: aliceblue; margin-top: 0.3rem;"></i>
+            </div>
+            <input [class.is-invalid] = "userDetails.get('password').invalid && userDetails.get('password').touched" style="width: 89%; border-radius: 0; opacity: 73%;" id="password" name="password" type="password" placeholder="Password" class="form-control border-0 shadow-sm px-4" formControlName="password">
+            <div *ngIf="(password.touched) || password.dirty">
+                <small *ngIf="password.errors?.required" class="text-danger">Password is required!</small>
+                <!--question mark(?) is a safe navigation operator-->
+                <small *ngIf="password.errors?.pattern" class="text-danger">Please provide a valid email address!</small>
+            </div>
+          </div>
+        </div>
+        <div style="width: 100%; padding: 0.5rem;">
+          <button type="submit" class="btn btn-warning btn-block text-uppercase mb-2 shadow-sm" style="background-color: rgba(8, 31, 43,1); border-color: rgba(8, 31, 43,1); color: white; font-weight: 700;"
+           [disabled]="!f.form.valid" (click)="onSignIn()">Sign in</button>
+        </div>
+        
+    </form>                          
+
+  </div>
+</div>
+  <nav class='navbar fixed-bottom ' style="background: #edf1f2; border-top: 1px solid #dee5e7;">
+    <div *ngIf="this.footerData[0].neewee_icon != ''">
+    <a class='navbar-brand text-muted' style='font-size: x-small;'><img src="{{footerData[0].neewee_icon}}"
+  
+        alt='Neewee Logo' style='width: 9.5em;'>{{footerData[0].copyright}}</a>
+    </div>
+    <div *ngIf="this.footerData[0].version != ''">
+        <a class='navbar-brand text-muted' style='font-size: smaller;'>{{footerData[0].version}}</a>
+    </div>
+  </nav>
+

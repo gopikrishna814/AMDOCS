@@ -1,0 +1,31 @@
+.login-div {
+    position: relative; 
+    height: calc( 100% - 50px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-div::before {    
+      content: "";
+      background-image: url('/assets/png/abbWallpaper.png');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 75%; 
+      filter: invert(1);
+  }
+
+
+.input-div{    
+    box-shadow: 0px 0px 3px 2px #fff, 0 0px 6px 7px #00F6FF; 
+    width: 63vh; 
+    height: 60vh;
+    background:rgba(87, 94, 97, 0.8);
+    background-size: cover;
+    position: absolute;
+}
